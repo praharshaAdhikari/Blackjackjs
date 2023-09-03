@@ -13,9 +13,11 @@ let dcards = document.getElementById("dcards")
 let adder = document.getElementById("sum")
 let dadder = document.getElementById("dsum")
 let stand = document.getElementById("stand")
+let heading = document.getElementById("heading")
 
 function draw(){
     document.getElementById("info").style.display = "block"
+    heading.style.fontSize = "35px";
     stand.style.display = "block"
     message.textContent = "Do you want to draw a card, again?"
     dcards.textContent = "Dealer's Cards : " + " | " + dCardsAr[0] + " | " +  " 🎴 "
@@ -75,6 +77,7 @@ function reset(){
     document.getElementById("info").style.display = "none"
     stand.style.display = "none"
     btn.textContent = "start game"
+    heading.style.fontSize = "70px";
     start()
 }
 

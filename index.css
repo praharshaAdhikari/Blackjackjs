@@ -36,6 +36,10 @@ p{
     display: none;
 }
 
+#info > p {
+    line-height: 10px;
+}
+
 button{
     padding: 10px 40px;
     margin: 25px;
